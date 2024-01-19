@@ -65,6 +65,7 @@ export const {
             });
 
             await newUser.save();
+            console.log("done");
           }
         } catch (err) {
           console.log(err);
