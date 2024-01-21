@@ -6,7 +6,7 @@ export const GET = async () => {
   try {
     connectToDb();
 
-    const posts = await Post.find().timeout(15000);
+    const posts = await Post.find();
     return NextResponse.json(posts);
   } catch (err) {
     console.log(err);
